@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task01</title>
+    <link rel="stylesheet" href="./css/styles-task01.css"/>
+</head>
+
+
+<body>
+<main></main>
+<aside>
+    <section class="field menu">
+        <div id="visible" class="visible">
+            <h2>Your personal tasks</h2>
+            <button id="add" class="add">+</button>
+        </div>
+        <div id="hidden" class="hidden">
+              <textarea id="text" class="task" name="task" cols="30" rows="4" placeholder="Your task"
+                        autocomplete="off"></textarea>
+<!--            <input id="text" type="text" class="task">-->
+
+            <div id="addition" class="addition">
+                <div id="topicality" class="topicality">
+<!--                    <label id="radio" for="topic"></label>-->
+                    <label   for="topic1">
+                             <input id="topic1" class="check" type="radio" name="topic" value="Actual">
+                                     <span id="fake1" class="fake"></span>
+                                     <span id="text1">Actual</span>
+                    </label>
+                    <label for="topic2">
+                             <input id="topic2" class="check" type="radio" name="topic" value="Close">
+                                     <span id="fake2" class="fake"></span>
+                                     <span id="text2">Close</span>
+                    </label>
+                </div>
+                <div id="priority" class="priority">
+                    <label id="priority-label" class="priority-label" for="priority-add">Priority:</label>
+                    <select id="priority-add" class="priority-add" name="priority-add">
+                        <option value="High">High</option>
+                        <option value="Normal">Normal</option>
+                        <option value="Low">Low</option>
+                    </select>
+
+                </div>
+
+            </div>
+            <button type="submit" id="ok" class="ok">OK</button>
+        </div>
+
+
+    </section>
+    <section class="field actual">
+        <details>
+            <summary>Actual tasks</summary>
+            <ul id="actual-item"></ul>
+        </details>
+    </section>
+    <section class="field archive">
+        <details>
+            <summary>Archive tasks</summary>
+            <ul id="archive-item"></ul>
+        </details>
+    </section>
+    <div id="active" class="active">
+        <button id="button-act" class="button-act">&gt;</button>
+    </div>
+    <div id="passive" class="passive">
+        <button id="button-pas" class="button-act">&lt;</button>
+    </div>
+</aside>
+
+<script src="/js/js-task01.js"></script>
+<script>
+</script>
+</body>
+
+</html>
